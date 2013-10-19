@@ -1,2 +1,16 @@
-#Ripple Client - Ruby
-A ruby implementation of the Ripple client protocol.
+#RippleR
+An implementation of the Ripple client protocol in Ruby.
+
+## Installation
+```
+$> gem install rippler
+```
+
+## Usage
+```
+require 'rippler'
+```
+If using eventmachine,
+```
+require 'rippler/em'
+```
