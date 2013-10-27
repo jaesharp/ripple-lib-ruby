@@ -1,8 +1,8 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "rippler/version"
+require "ripple/version"
 
 Gem::Specification.new do |s|
-  s.name = "lib-ripple-ruby"
+  s.name = "ripple-lib-ruby"
   s.version = Ripple::Version.to_standard_version_s
   s.platform = Gem::Platform::RUBY
   s.authors = ["Justin Lynn (justinlynn)"]

@@ -1,9 +1,9 @@
-#lib-ripple-ruby
+#ripple-lib-ruby
 An implementation of the Ripple client protocol in Ruby.
 
 ## Installation
 ```sh
-gem install lib-ripple-ruby
+gem install ripple-lib-ruby
 ```
 
 ## Usage
