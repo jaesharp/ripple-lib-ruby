@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    lib-ripple-ruby (0.0.1alpha)
+    ripple-lib-ruby (0.0.1alpha)
       em-websocket-client
 
 GEM
@@ -38,8 +38,8 @@ PLATFORMS
 
 DEPENDENCIES
   em-websocket-client!
-  lib-ripple-ruby!
   mocha
   rake
+  ripple-lib-ruby!
   rspec
   yard

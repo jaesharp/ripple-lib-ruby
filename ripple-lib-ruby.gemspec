@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.authors = ["Justin Lynn (justinlynn)"]
   s.email = ["j@jaesharp.com"]
-  s.homepage = "https://github.com/justinlynn/lib-ripple-ruby"
+  s.homepage = "https://github.com/justinlynn/ripple-lib-ruby"
   s.summary = %q{An implementation of the Ripple client protocol in Ruby, with EventMachine support.}
   s.description = s.summary
 
