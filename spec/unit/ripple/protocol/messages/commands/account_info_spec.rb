@@ -2,9 +2,13 @@ require 'spec/unit/helper'
 
 describe Ripple::Protocol::Messages::Commands::AccountInfo do
 
-  context 'fields named' do
+  subject{ Ripple::Protocol::Messages::Commands::AccountInfo }
 
-    subject{ Ripple::Protocol::Messages::Commands::AccountInfo }
+  it 'has an rpc_name of account_info' do
+    subject.rpc_name.should eql('account_info')
+  end
+
+  context 'fields named' do
 
     context 'account' do
 

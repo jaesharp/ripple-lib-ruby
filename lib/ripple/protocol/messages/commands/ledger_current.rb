@@ -8,7 +8,7 @@ module Ripple
         # Returns the current proposed ledger index.
         class LedgerCurrent < Command
 
-          has_rpc_name 'ledger_closed'
+          has_rpc_name 'ledger_current'
 
         end
 
