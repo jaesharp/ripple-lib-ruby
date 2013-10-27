@@ -5,12 +5,16 @@ module Ripple
       # A message field which can contain other fields
       class Field
 
-        def initialize name
+        def initialize name, required: false
           @name = name
+          @required = required
         end
 
-        def name
-          @name
+        attr_reader(:name)
+
+        attr_writer(:required)
+        def required?
+          @required
         end
 
       end

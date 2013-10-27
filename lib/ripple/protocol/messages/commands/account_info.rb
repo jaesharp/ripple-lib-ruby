@@ -10,25 +10,17 @@ module Ripple
 
           has_rpc_name 'account_info'
 
-          has_field :account # account, nickname, seed, passphrase, key
+          has_field :account, required: true # account, nickname, seed, passphrase, key
 
           # if true, accepts only public ids for account
-          has_field :strict do
-            default false
-          end
+          has_field :strict, required: true
 
           # optional, unsigned integer
-          has_field :index do
-            optional
-          end
+          has_field :index
 
-          has_field :ledger_hash do
-            optional
-          end
+          has_field :ledger_hash
 
-          has_field :ledger_index do
-            optional
-          end
+          has_field :ledger_index
 
         end
 
