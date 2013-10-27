@@ -2,15 +2,15 @@
 An implementation of the Ripple client protocol in Ruby.
 
 ## Installation
-```
-$> gem install rippler
+```sh
+gem install lib-ripple-ruby
 ```
 
 ## Usage
-```
-require 'lib-ripple-ruby'
+```ruby
+require 'ripple'
 ```
 If using eventmachine,
-```
-require 'lib-ripple-ruby/em'
+```ruby
+require 'ripple/em'
 ```
