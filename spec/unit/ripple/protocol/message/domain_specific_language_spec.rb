@@ -9,9 +9,4 @@ describe Ripple::Protocol::Message::DomainSpecificLanguage do
     subject::ClassMethods.ancestors.should include(subject::Fields::ClassMethods)
   end
 
-  it 'includes rpc_name definitions' do
-    subject.ancestors.should include(subject::RPCName)
-    subject::ClassMethods.ancestors.should include(subject::RPCName::ClassMethods)
-  end
-
 end

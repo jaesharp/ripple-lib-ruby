@@ -9,3 +9,5 @@ module Ripple
     end
   end
 end
+
+require 'ripple/protocol/messages/command/domain_specific_language'

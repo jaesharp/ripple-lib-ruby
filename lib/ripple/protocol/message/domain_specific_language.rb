@@ -1,5 +1,4 @@
 require 'ripple/protocol/message/domain_specific_language/fields'
-require 'ripple/protocol/message/domain_specific_language/rpc_name'
 
 module Ripple
   module Protocol
