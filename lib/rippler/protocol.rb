@@ -5,3 +5,6 @@ module Rippler
   end
 
 end
+
+require 'rippler/protocol/message'
+require 'rippler/protocol/messages'
