@@ -9,7 +9,7 @@ describe Ripple::Protocol::Messages::Commands::AccountInfo do
     context 'account' do
 
       it 'exists' do
-        subject.should have_field(:account)
+        subject.should have_field_named(:account)
       end
 
       it 'is required' do
@@ -22,9 +22,50 @@ describe Ripple::Protocol::Messages::Commands::AccountInfo do
     context 'strict' do
 
       it 'exists' do
-        subject.should have_field(:strict)
+        subject.should have_field_named(:strict)
+      end
+
+      it 'is required' do
+        subject.strict.should be_required
       end
 
     end
+
+    context 'index' do
+
+      it 'exists' do
+        subject.should have_field_named(:index)
+      end
+
+      it 'is optional' do
+        subject.index.should_not be_required
+      end
+
+    end
+
+    context 'ledger_hash' do
+
+      it 'exists' do
+        subject.should have_field_named(:ledger_hash)
+      end
+
+      it 'is optional' do
+        subject.ledger_hash.should_not be_required
+      end
+
+    end
+
+    context 'ledger_index' do
+
+      it 'exists' do
+        subject.should have_field_named(:ledger_index)
+      end
+
+      it 'is optional' do
+        subject.ledger_index.should_not be_required
+      end
+
+    end
+
   end
 end

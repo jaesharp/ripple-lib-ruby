@@ -13,7 +13,7 @@ module Ripple
 
           module ClassMethods
 
-            def has_field? field_name
+            def has_field_named? field_name
               fields.map(&:name).include?(field_name)
             end
 

@@ -15,7 +15,7 @@ describe Ripple::Protocol::Message::DomainSpecificLanguage::Fields do
     end
 
     it 'defines a predicate method which checks if the given field is existent (by name)' do
-      subject.instance_methods.should include(:has_field?)
+      subject.instance_methods.should include(:has_field_named?)
     end
 
   end
