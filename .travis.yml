@@ -2,5 +2,6 @@ language: ruby
 rvm:
   - 2.0.0
 notifications:
+  email: false
   irc:
     - "chat.freenode.net#ripple-dev"
