@@ -1,4 +1,4 @@
-require 'rippler'
+require 'ripple'
 
 # Initialise specification infrastructure
 require 'rspec'

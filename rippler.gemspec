@@ -2,12 +2,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require "rippler/version"
 
 Gem::Specification.new do |s|
-  s.name = "rippler"
-  s.version = Rippler::Version.to_standard_version_s
+  s.name = "lib-ripple-ruby"
+  s.version = Ripple::Version.to_standard_version_s
   s.platform = Gem::Platform::RUBY
   s.authors = ["Justin Lynn (justinlynn)"]
   s.email = ["j@jaesharp.com"]
-  s.homepage = "https://github.com/justinlynn/ripple-client-ruby"
+  s.homepage = "https://github.com/justinlynn/lib-ripple-ruby"
   s.summary = %q{An implementation of the Ripple client protocol in Ruby, with EventMachine support.}
   s.description = s.summary
 

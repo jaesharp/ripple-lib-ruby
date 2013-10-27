@@ -1,4 +1,4 @@
-#RippleR
+#lib-ripple-ruby
 An implementation of the Ripple client protocol in Ruby.
 
 ## Installation
@@ -8,9 +8,9 @@ $> gem install rippler
 
 ## Usage
 ```
-require 'rippler'
+require 'lib-ripple-ruby'
 ```
 If using eventmachine,
 ```
-require 'rippler/em'
+require 'lib-ripple-ruby/em'
 ```
