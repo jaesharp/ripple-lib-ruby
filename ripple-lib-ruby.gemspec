@@ -5,6 +5,7 @@ Gem::Specification.new do |s|
   s.name = "ripple-lib-ruby"
   s.version = Ripple::Version.to_standard_version_s
   s.platform = Gem::Platform::RUBY
+  s.required_ruby_version = ">= 2.0.0"
   s.authors = ["Justin Lynn (justinlynn)"]
   s.email = ["j@jaesharp.com"]
   s.homepage = "https://github.com/justinlynn/ripple-lib-ruby"
