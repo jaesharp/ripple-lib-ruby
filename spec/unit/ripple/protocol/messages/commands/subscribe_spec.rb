@@ -8,4 +8,8 @@ describe Ripple::Protocol::Messages::Commands::Subscribe do
     subject.rpc_name.should eql('subscribe')
   end
 
+  it 'creates a response stream' do
+    subject.creates_response_stream?.should be_true
+  end
+
 end

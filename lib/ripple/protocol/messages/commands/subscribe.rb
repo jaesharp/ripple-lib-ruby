@@ -10,6 +10,8 @@ module Ripple
 
           has_rpc_name 'subscribe'
 
+          creates_response_stream
+
         end
 
       end
