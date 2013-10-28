@@ -13,12 +13,11 @@ module Ripple
             module ClassMethods
 
               def a_response_to(command)
-                @response_to ||= []
-                @response_to << command
+                response_to << command
               end
 
               def response_to
-                @response_to
+                @response_to ||= []
               end
 
             end

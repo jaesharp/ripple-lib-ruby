@@ -1,4 +1,5 @@
 require 'ripple/protocol/messages/response'
+require 'ripple/protocol/messages/commands/data_sign'
 
 module Ripple
   module Protocol
@@ -6,6 +7,9 @@ module Ripple
       module Responses
 
         class DataSign < Response
+
+          a_response_to Commands::DataSign
+
         end
 
       end
