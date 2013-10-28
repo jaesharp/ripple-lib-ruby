@@ -13,6 +13,7 @@ module Ripple
             module ClassMethods
 
               def a_response_to(command)
+                command.has_response(self)
                 response_to << command
               end
 

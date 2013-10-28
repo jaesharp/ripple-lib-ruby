@@ -8,4 +8,12 @@ describe Ripple::Protocol::Messages::Commands::Ledger do
     subject.rpc_name.should eql('ledger')
   end
 
+  context 'responses' do
+
+    it 'including Ledger' do
+      subject.should have_response(Ripple::Protocol::Messages::Responses::Ledger)
+    end
+
+  end
+
 end

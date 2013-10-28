@@ -1,5 +1,6 @@
 require 'ripple/protocol/messages/command/domain_specific_language/rpc_name'
 require 'ripple/protocol/messages/command/domain_specific_language/creates_response_stream'
+require 'ripple/protocol/messages/command/domain_specific_language/response'
 
 module Ripple
   module Protocol

@@ -8,6 +8,14 @@ describe Ripple::Protocol::Messages::Commands::AccountInfo do
     subject.rpc_name.should eql('account_info')
   end
 
+  context 'responses' do
+
+    it 'including AccountInfo' do
+      subject.should have_response(Ripple::Protocol::Messages::Responses::AccountInfo)
+    end
+
+  end
+
   context 'fields named' do
 
     context 'account' do

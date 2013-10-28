@@ -8,4 +8,12 @@ describe Ripple::Protocol::Messages::Commands::AccountLines do
     subject.rpc_name.should eql('account_lines')
   end
 
+  context 'responses' do
+
+    it 'including AccountLines' do
+      subject.should have_response(Ripple::Protocol::Messages::Responses::AccountLines)
+    end
+
+  end
+
 end

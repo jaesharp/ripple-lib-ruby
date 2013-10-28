@@ -12,4 +12,12 @@ describe Ripple::Protocol::Messages::Commands::Subscribe do
     subject.creates_response_stream?.should be_true
   end
 
+  context 'responses' do
+
+    it 'including Subscribe' do
+      subject.should have_response(Ripple::Protocol::Messages::Responses::Subscribe)
+    end
+
+  end
+
 end

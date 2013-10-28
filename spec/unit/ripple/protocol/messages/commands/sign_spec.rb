@@ -8,4 +8,12 @@ describe Ripple::Protocol::Messages::Commands::Sign do
     subject.rpc_name.should eql('sign')
   end
 
+  context 'responses' do
+
+    it 'including Sign' do
+      subject.should have_response(Ripple::Protocol::Messages::Responses::Sign)
+    end
+
+  end
+
 end

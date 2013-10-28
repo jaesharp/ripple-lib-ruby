@@ -8,4 +8,12 @@ describe Ripple::Protocol::Messages::Commands::BookOffers do
     subject.rpc_name.should eql('book_offers')
   end
 
+  context 'responses' do
+
+    it 'including BookOffers' do
+      subject.should have_response(Ripple::Protocol::Messages::Responses::BookOffers)
+    end
+
+  end
+
 end

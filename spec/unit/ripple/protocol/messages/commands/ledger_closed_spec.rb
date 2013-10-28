@@ -8,4 +8,12 @@ describe Ripple::Protocol::Messages::Commands::LedgerClosed do
     subject.rpc_name.should eql('ledger_closed')
   end
 
+  context 'responses' do
+
+    it 'including LedgerClosed' do
+      subject.should have_response(Ripple::Protocol::Messages::Responses::LedgerClosed)
+    end
+
+  end
+
 end

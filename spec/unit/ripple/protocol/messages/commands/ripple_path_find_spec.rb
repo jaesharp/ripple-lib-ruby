@@ -8,4 +8,12 @@ describe Ripple::Protocol::Messages::Commands::RipplePathFind do
     subject.rpc_name.should eql('ripple_path_find')
   end
 
+  context 'responses' do
+
+    it 'including RipplePathFind' do
+      subject.should have_response(Ripple::Protocol::Messages::Responses::RipplePathFind)
+    end
+
+  end
+
 end
