@@ -4,5 +4,5 @@ require 'ripple'
 require 'rspec'
 
 RSpec.configure do |configuration|
-  configuration.mock_with :mocha
+  configuration.mock_with :rspec
 end

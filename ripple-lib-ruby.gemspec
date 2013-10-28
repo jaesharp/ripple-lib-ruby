@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'yard'
-  s.add_development_dependency 'mocha'
   s.add_development_dependency 'rspec'
 
   s.add_dependency 'em-websocket-client'
